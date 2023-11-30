@@ -1,0 +1,292 @@
+body {
+  font-family: "Press Start 2P";
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 275px;
+  left: 70px;
+  background-color: gray;
+  width: 650px;
+  height: 250px;
+  border-radius: 100px;
+  border: 10px solid black;
+}
+
+#button {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 110px;
+  left: 100px;
+}
+
+#previous-music {
+  position: absolute;
+  top: 200px;
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  border: 50px solid transparent;
+  border-top: 50px solid black;
+  border-left: 50px solid white;
+  border-radius: 50%;
+  clip-path: polygon(0% 0%, 0% 100%, 50% 50%);
+}
+
+#previous-music button {
+  position: absolute;
+  top: 40px;
+  left: -40px;
+  border: none;
+  background: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#previous-music:hover {
+  position: absolute;
+  top: 200px;
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  border: 50px solid transparent;
+  border-top: 50px solid black;
+  border-left: 50px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  clip-path: polygon(0% 0%, 0% 100%, 50% 50%);
+  cursor: pointer;
+}
+
+#volume-up {
+  position: absolute;
+  top: 200px;
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  border: 50px solid transparent;
+  border-top: 50px solid black;
+  border-left: 50px solid white;
+  border-radius: 50%;
+  transform: rotate(90deg);
+  clip-path: polygon(0% 0%, 0% 100%, 50% 50%);
+}
+
+#volume-up button {
+  position: absolute;
+  top: 35px;
+  left: -40px;
+  border: none;
+  background: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#volume-up:hover {
+  position: absolute;
+  top: 200px;
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  border: 50px solid transparent;
+  border-top: 50px solid black;
+  border-left: 50px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  clip-path: polygon(0% 0%, 0% 100%, 50% 50%);
+  cursor: pointer;
+}
+
+#next-music {
+  position: absolute;
+  top: 200px;
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  border: 50px solid transparent;
+  border-top: 50px solid black;
+  border-left: 50px solid white;
+  border-radius: 50%;
+  transform: rotate(180deg);
+  clip-path: polygon(0% 0%, 0% 100%, 50% 50%);
+}
+
+#next-music button {
+  position: absolute;
+  top: 35px;
+  left: -40px;
+  border: none;
+  background: none;
+  font-size: 24px;
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+
+#next-music:hover {
+  position: absolute;
+  top: 200px;
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  border: 50px solid transparent;
+  border-top: 50px solid black;
+  border-left: 50px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  clip-path: polygon(0% 0%, 0% 100%, 50% 50%);
+  cursor: pointer;
+}
+
+#volume-down {
+  position: absolute;
+  top: 200px;
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  border: 50px solid transparent;
+  border-top: 50px solid black;
+  border-left: 50px solid white;
+  border-radius: 50%;
+  transform: rotate(270deg);
+  clip-path: polygon(0% 0%, 0% 100%, 50% 50%);
+}
+
+#volume-down button {
+  position: absolute;
+  top: 35px;
+  left: -40px;
+  border: none;
+  background: none;
+  font-size: 24px;
+  transform: rotate(90deg);
+  cursor: pointer;
+}
+
+#volume-down:hover {
+  position: absolute;
+  top: 200px;
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  border: 50px solid transparent;
+  border-top: 50px solid black;
+  border-left: 50px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  clip-path: polygon(0% 0%, 0% 100%, 50% 50%);
+  cursor: pointer;
+}
+
+#music-play {
+  position: absolute;
+  top: 249px;
+  left: 49px;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#music-play button {
+  border: none;
+  background: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#music-play:hover {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+#display {
+  position: relative;
+  top: 40px;
+  left: 250px;
+  width: 350px;
+  height: 160px;
+  border: 1px solid black;
+  border-radius: 25px;
+  background-color: #5ba3ad;
+}
+
+#status-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 20px;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+#status-bar div {
+  font-size: 14px;
+}
+
+#time {
+  margin-top: 3px;
+}
+
+#display2 {
+  display: grid;
+  border-bottom: 1px solid black;
+}
+
+#music-info {
+  flex: 7;
+  padding: 20px 20px;
+}
+
+#music-artist {
+  display: flex;
+  flex-direction: row;
+}
+
+#music-artist-name {
+  padding: 3px 0px 0px 15px;
+}
+
+#music-name {
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+}
+
+#music-name-title {
+  padding: 3px 0px 0px 15px;
+}
+
+#slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 3px 20px 0px 20px;
+}
+
+#time-bar {
+  width: 100%;
+  height: 3px;
+  background-color: #5ba3ad;
+  margin: 0px 10px 0px 10px;
+  border: 1px solid black;
+}
+
+#time-bar-inside {
+  height: 3px;
+  background-color: black;
+  width: 0%;
+  border-radius: 5px;
+}
+
+#current-time,
+#total-duration {
+  font-size: 12px;
+  padding-top: 3px;
+}
